@@ -1,0 +1,26 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                WEb Development Ebook
+            </h1>
+            <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, adipisci.
+            </p>
+            <form action="/charge" method="POST">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    {{!-- Enter Your Publishable Key Here --}} data-key="Publishable Key Here" data-image="/images/logo.png"
+                    data-name="Demo Site" data-description="2 widgets ($20.00)" data-amount="2000">
+
+                    </script>
+                <script>
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-outline-dark">Pay Here</button>
+            </form>
+        </div>
+        <div class="col-md-6 ">
+            <img src="/images/card.jpeg" alt="" class="img-fluid h-100 w-100">
+        </div>
+    </div>
+</section>
